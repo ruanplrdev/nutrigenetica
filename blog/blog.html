@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Nutri Higiênica</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .category-tag {
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800 bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="text-2xl font-bold text-gray-800">Nutri Higiênica</a>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-purple-600 transition">Home</a>
+                    <a href="#teste-genetico" class="text-gray-600 hover:text-purple-600 transition">Teste Genético</a>
+                    <a href="blog.html" class="text-purple-600 font-medium">Blog</a>
+                    <a href="#sobre" class="text-gray-600 hover:text-purple-600 transition">Sobre</a>
+                </nav>
+                <div class="md:hidden">
+                    <button class="text-gray-600 focus:outline-none">
+                        <i data-feather="menu" width="24" height="24"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Blog Hero -->
+    <section class="py-16 bg-gradient-to-r from-purple-500 to-indigo-600 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl font-bold mb-4" data-aos="fade-up">Blog Nutri Higiênica</h1>
+            <p class="text-xl max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">Artigos sobre nutrigenética, saúde intestinal e nutrição funcional</p>
+        </div>
+    </section>
+
+    <!-- Blog Content -->
+    <section class="py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Article 1 -->
+                <article class="bg-white rounded-lg overflow-hidden shadow-md article-card transition duration-300" data-aos="fade-up">
+                    <a href="#">
+                        <img src="http://static.photos/science/640x360/1" alt="Nutrigenética" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <span class="category-tag text-white text-xs font-semibold px-3 py-1 rounded-full">Nutrigenética</span>
+                            <h3 class="text-xl font-semibold mt-3 mb-2">Como seu DNA influencia sua nutrição</h3>
+                            <p class="text-gray-600 text-sm mb-4">Entenda como pequenas variações genéticas podem mudar completamente a forma como seu corpo processa os nutrientes.</p>
+                            <div class="flex items-center text-sm text-gray-500">
+                                <span>10 min de leitura</span>
+                                <span class="mx-2">•</span>
+                                <span>15/06/2023</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="bg-white rounded-lg overflow-hidden shadow-md article-card transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <a href="#">
+                        <img src="http://static.photos/medical/640x360/2" alt="Microbioma" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <span class="category-tag text-white text-xs font-semibold px-3 py-1 rounded-full">Microbioma</span>
+                            <h3 class="text-xl font-semibold mt-3 mb-2">O papel do intestino na saúde geral</h3>
+                            <p class="text-gray-600 text-sm mb-4">Descubra como os trilhões de bactérias em seu intestino influenciam desde imunidade até saúde mental.</p>
+                            <div class="flex items-center text-sm text-gray-500">
+                                <span>8 min de leitura</span>
+                                <span class="mx-2">•</span>
+                                <span>01/06/2023</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="bg-white rounded-lg overflow-hidden shadow-md article-card transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <a href="#">
+                        <img src="http://static.photos/food/640x360/3" alt="Nutrição" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <span class="category-tag text-white text-xs font-semibold px-3 py-1 rounded-full">Nutrição</span>
+                            <h3 class="text-xl font-semibold mt-3 mb-2">Alimentos que ativam genes de longevidade</h3>
+                            <p class="text-gray-600 text-sm mb-4">Conheça os compostos alimentares que podem ajudar a ativar genes protetores e prolongar sua saúde.</p>
+                            <div class="flex items-center text-sm text-gray-500">
+                                <span>12 min de leitura</span>
+                                <span class="mx-2">•</span>
+                                <span>20/05/2023</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Article 4 -->
+                <article class="bg-white rounded-lg overflow-hidden shadow-md article-card transition duration-300" data-aos="fade-up">
+                    <a href="#">
+                        <img src="http://static.photos/health/640x360/4" alt="Suplementos" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <span class="category-tag text-white text-xs font-semibold px-3 py-1 rounded-full">Suplementos</span>
+                            <h3 class="text-xl font-semibold mt-3 mb-2">Suplementação personalizada baseada em genética</h3>
+                            <p class="text-gray-600 text-sm mb-4">Por que algumas pessoas respondem bem a certos suplementos e outras não? A resposta pode estar no DNA.</p>
+                            <div class="flex items-center text-sm text-gray-500">
+                                <span>15 min de leitura</span>
+                                <span class="mx-2">•</span>
+                                <span>05/05/2023</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Article 5 -->
+                <article class="bg-white rounded-lg overflow-hidden shadow-md article-card transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <a href="#">
+                        <img src="http://static.photos/medical/640x360/5" alt="Doenças" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <span class="category-tag text-white text-xs font-semibold px-3 py-1 rounded-full">Prevenção</span>
+                            <h3 class="text-xl font-semibold mt-3 mb-2">Prevenção de doenças através da nutrição</h3>
+                            <p class="text-gray-600 text-sm mb-4">Como ajustar sua alimentação pode reduzir significativamente o risco de desenvolver doenças crônicas.</p>
+                            <div class="flex items-center text-sm text-gray-500">
+                                <span>10 min de leitura</span>
+                                <span class="mx-2">•</span>
+                                <span>22/04/2023</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Article 6 -->
+                <article class="bg-white rounded-lg overflow-hidden shadow-md article-card transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <a href="#">
+                        <img src="http://static.photos/science/640x360/6" alt="Testes" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <span class="category-tag text-white text-xs font-semibold px-3 py-1 rounded-full">Testes</span>
+                            <h3 class="text-xl font-semibold mt-3 mb-2">Quando fazer um teste genético nutricional?</h3>
+                            <p class="text-gray-600 text-sm mb-4">Entenda em quais situações o teste genético pode trazer benefícios reais para sua saúde e nutrição.</p>
+                            <div class="flex items-center text-sm text-gray-500">
+                                <span>7 min de leitura</span>
+                                <span class="mx-2">•</span>
+                                <span>10/04/2023</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+
+            <!-- Pagination -->
+            <div class="mt-12 flex justify-center" data-aos="fade-up">
+                <nav class="flex items-center space-x-2">
+                    <a href="#" class="px-4 py-2 border rounded-lg text-purple-600 border-purple-600 hover:bg-purple-50 transition">1</a>
+                    <a href="#" class="px-4 py-2 border rounded-lg text-gray-600 border-gray-300 hover:bg-gray-50 transition">2</a>
+                    <a href="#" class="px-4 py-2 border rounded-lg text-gray-600 border-gray-300 hover:bg-gray-50 transition">3</a>
+                    <a href="#" class="px-4 py-2 border rounded-lg text-gray-600 border-gray-300 hover:bg-gray-50 transition">Próximo →</a>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-12 bg-purple-700 text-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-2xl mx-auto text-center">
+                <h2 class="text-2xl font-bold mb-4" data-aos="fade-up">Receba artigos exclusivos</h2>
+                <p class="mb-6" data-aos="fade-up" data-aos-delay="100">Inscreva-se para receber em primeira mão nossos melhores conteúdos sobre nutrição e genética.</p>
+                <form class="flex flex-col sm:flex-row gap-2 max-w-md mx-auto" data-aos="fade-up" data-aos-delay="200">
+                    <input type="email" placeholder="Seu melhor e-mail" class="flex-grow px-4 py-3 rounded-lg text-gray-800 focus:outline-none">
+                    <button type="submit" class="bg-white text-purple-700 font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition">Assinar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Nutri Higiênica</h3>
+                    <p class="text-gray-400">Nutrição baseada em evidências científicas e personalizada para sua genética.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#teste-genetico" class="text-gray-400 hover:text-white transition">Teste Genético</a></li>
+                        <li><a href="#sobre" class="text-gray-400 hover:text-white transition">Sobre Denise</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Contato</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center"><i data-feather="mail" class="mr-2" width="16"></i> contato@nutrihigienica.com</li>
+                        <li class="flex items-center"><i data-feather="phone" class="mr-2" width="16"></i> (XX) XXXX-XXXX</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Redes Sociais</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i data-feather="instagram" width="20"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i data-feather="youtube" width="20"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i data-feather="facebook" width="20"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Nutri Higiênica. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/SEUNUMERO" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition">
+        <i data-feather="message-circle" width="24" height="24"></i>
+    </a>
+
+    <script>
+        AOS.init();
+        feather.replace();
+    </script>
+</body>
+</html>
